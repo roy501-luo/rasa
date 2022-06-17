@@ -9,26 +9,31 @@ intents:
   - mood_unhappy
   - bot_challenge
 
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "你好呀"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "它可爱嘛，哈哈哈哈:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "快夸夸我！！！！"
+#    type: mrkdown
 
   utter_happy:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "再见"
+  - text: "欢迎下次光临~"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "我是你的智能助手，小汤"
 
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  utter_out_of_scope:
+  - text: 不好意思，这个问题我还在学习中
