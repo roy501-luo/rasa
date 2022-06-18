@@ -31,7 +31,7 @@ docker run -ti -v ${pwd}:/app rasa/rasa:3.1.2-full shell
 ## 9.让用户使用机器人
 https://rasa.com/docs/rasa/connectors/your-own-website
 ```
-docker run -v C:\\Users\\roy\\IdeaProjects\\rasa:/app rasa/rasa:3.1.2-full run --enable-api --cors “*”
+docker run -v ${pwd}:/app -p 5005:5005 rasa/rasa:3.1.2-full run --enable-api --cors “*”
 ```
 
 开启rasa-api后，即可通过post请求发送消息
