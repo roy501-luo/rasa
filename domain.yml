@@ -36,4 +36,4 @@ responses:
   - text: "我是你的智能助手，小汤"
 
   utter_out_of_scope:
-  - text: 不好意思，这个问题我还在学习中
+  - text: "不好意思，这个问题我还在学习中"
