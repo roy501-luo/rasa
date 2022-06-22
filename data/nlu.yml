@@ -1,113 +1,67 @@
 version: "3.1"
-
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-    - 你好
-    - 在吗
-
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-    - 再见
-    - 88
-    - 886
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - 是的
-    - 对的
-    - 嗯
-    - enen
-    - 嗯嗯
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - 没有
-    - 不
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-    - 好的
-    - 完美
-    - 真棒
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-    - 图片
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-    - 你是谁呀？
-    - 你是机器人吗？
-
-- intent: out_of_scope
-  examples: |
-    - ?
+  - intent: goodbye
+    examples: |
+      - 拜拜
+      - 拜
+      - 退出
+      - 结束
+      - 88
+      - cu
+  - intent: greet
+    examples: |
+      - 你好
+      - 您好
+      - hello
+      - hi
+      - 喂
+      - 在么
+  - intent: faq/notes
+    examples: |
+      - 应聘ACME校园招聘职位的注意事项?
+      - 注意事项
+      - 应聘有哪些需要注意的
+  - intent: faq/work_location
+    examples: |
+      - 校园招聘录取的应届生主要工作地点在哪里?
+      - 工作地点
+      - 地点
+  - intent: faq/max_job_request
+    examples: |
+      - 最多申请几个职位?
+      - 可以申请几个岗位
+      - HC有多少
+  - intent: faq/audit
+    examples: |
+      - 各阶段审核说明
+      - 审核说明
+  - intent: faq/write_exam_participate
+    examples: |
+      - 怎样参加笔试?
+  - intent: faq/write_exam_location
+    examples: |
+      - 笔试考试地点如何安排?
+  - intent: faq/write_exam_again
+    examples: |
+      - 笔试只安排一次吗?我笔试当天没有参加，是否还有再次笔试的机会?
+  - intent: faq/write_exam_with-out-offer
+    examples: |
+      - 如果我没有收到笔试通知，但我很想进入ACME，能否直接进入考场参加考试?
+  - intent: faq/interview_arrangement
+    examples: |
+      - 面试什么时候开始?会提前多少天通知面试安排?
+  - intent: faq/interview_times
+    examples: |
+      - 一般会安排几次面试?
+  - intent: faq/interview_from
+    examples: |
+      - 面试的形式是怎样的?是单独面试还是小组面试?
+  - intent: faq/interview_clothing
+    examples: |
+      - 对面试的服装有什么具体的要求?
+  - intent: faq/interview_paperwork
+    examples: |
+      - 面试时需要携带什么资料?
+  - intent: faq/interview_result
+    examples: |
+      - 如何查询面试结果?

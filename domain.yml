@@ -1,39 +1,24 @@
 version: "3.1"
 
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 
+intents:
+  - goodbye
+  - greet
+  - faq
+
 responses:
   utter_greet:
-  - text: "你好呀"
-
-  utter_cheer_up:
-  - text: "它可爱嘛，哈哈哈哈:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "快夸夸我！！！！"
-#    type: mrkdown
-
-  utter_happy:
-  - text: "Great, carry on!"
-
+    - text: 你好，我是 小汤，我是一个基于 Rasa 的 FAQ 机器人
   utter_goodbye:
-  - text: "再见"
-  - text: "欢迎下次光临~"
+    - text: 再见！
+  utter_default:
+    - text: 这个问题我还在学习中~
 
-  utter_iamabot:
-  - text: "我是你的智能助手，小汤"
-
-  utter_out_of_scope:
-  - text: "不好意思，这个问题我还在学习中"
+actions:
+  - utter_goodbye
+  - utter_greet
+  - utter_default
+  - respond_faq
