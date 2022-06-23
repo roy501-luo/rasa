@@ -6,7 +6,6 @@ rules:
       - intent: weather
       - action: weather_form
       - active_loop: weather_form
-
   - rule: Submit form
     condition:
       # Condition that form is active.

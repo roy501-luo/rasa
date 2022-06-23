@@ -3,10 +3,10 @@ from typing import Any, Dict, List, Text
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
-from rasa_sdk.forms import FormAction
+from rasa_sdk.forms import FormValidationAction
 
-from service.normalization import text_to_date
-from service.weather import get_text_weather_date
+from actions.normalization import text_to_date
+from actions.weather import get_text_weather_date
 
 
 class WeatherFormAction(Action):

@@ -1,0 +1,6 @@
+version: "3.1"
+responses:
+  utter_chitchat/whoyouare:
+    - text: 你好，我是小汤，我刚刚学会了如何查询天气信息~。
+  utter_chitchat/whatyoucando:
+    - text: 我能帮你查找中国大陆地区城市级别的当下和未来两天的天气情况。
