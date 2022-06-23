@@ -16,6 +16,40 @@ intents:
 entities:
   - address
   - date-time
+
+responses:
+  utter_greet:
+    - text: 你好，请说出需要提供天气预测服务的地点和时间
+  utter_goodbye:
+    - text: 再见！
+  utter_ask_address:
+    - text: 想查询哪里的天气呢？
+  utter_ask_date-time:
+    - text: 想查询什么时候的天气呢？
+  utter_ask_continue:
+    - text: 是否要继续？
+  utter_default:
+    - text: 系统不明白您说的话，请换个说法。
+  utter_action_weather_form_submit:
+    - text: 调用天气查询接口~
+
+actions:
+  - utter_ask_address
+  - utter_ask_date-time
+  - utter_goodbye
+  - utter_greet
+  - utter_ask_continue
+  - utter_default
+  - respond_chitchat
+  - action_weather_form_submit
+
+forms:
+  weather_form:
+    ignored_intents: []
+    required_slots:
+      - address
+      - date-time
+
 slots:
   address:
     type: text
@@ -33,33 +67,3 @@ slots:
         type: from_entity
         conditions:
           - active_loop: weather_form
-responses:
-  utter_greet:
-    - text: 你好，请说出需要提供天气预测服务的地点和时间
-  utter_goodbye:
-    - text: 再见！
-  utter_ask_address:
-    - text: 想查询哪里的天气呢？
-  utter_ask_date-time:
-    - text: 想查询什么时候的天气呢？
-  utter_ask_continue:
-    - text: 是否要继续？
-  utter_default:
-    - text: 系统不明白您说的话，请换个说法。
-  utter_action_weather_form_submit:
-    - text: 调用天气查询接口~
-actions:
-  - utter_ask_address
-  - utter_ask_date-time
-  - utter_goodbye
-  - utter_greet
-  - utter_ask_continue
-  - utter_default
-  - respond_chitchat
-  - action_weather_form_submit
-forms:
-  weather_form:
-    ignored_intents: []
-    required_slots:
-      - address
-      - date-time
