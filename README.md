@@ -1,4 +1,4 @@
-#Rasa项目基本流程
+# Rasa项目基本流程
 
 ## 1.初始化项目
 ```docker run -v ${pwd}:/app rasa/rasa:3.1.2-full init --no-prompt```
