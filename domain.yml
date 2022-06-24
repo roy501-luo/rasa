@@ -30,6 +30,7 @@ responses:
     - text: 是否要继续？
   utter_default:
     - text: 系统不明白您说的话，请换个说法。
+    - text: 这个问题，我还在学习中
   utter_action_weather_form_submit:
     - text: 调用天气查询接口~
 
