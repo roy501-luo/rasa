@@ -8,6 +8,7 @@ nlu:
       - 结束
       - 88
       - cu
+      - 再见
   - intent: greet
     examples: |
       - 你好
